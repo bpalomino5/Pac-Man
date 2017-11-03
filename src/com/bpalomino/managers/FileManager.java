@@ -2,6 +2,8 @@ package com.bpalomino.managers;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.IOException;
 
 public class FileManager{
@@ -18,7 +20,9 @@ public class FileManager{
 
 	public static void read(String file) throws IOException{
 		String line;
-		reader = new BufferedReader(new FileReader(file));
+		InputStream in = FileManager.class.getResourceAsStream("/"+file);
+		// reader = new BufferedReader(new FileReader(file));
+		reader = new BufferedReader(new InputStreamReader(in));
 
 		line = reader.readLine();
 		String[] parts = line.split(",",2);
