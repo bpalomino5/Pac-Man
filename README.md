@@ -6,4 +6,9 @@ Recreation of original Pac-Man game using the following:
 - Java
 - Jarsplice
 
-Essential game play features are implemented.
+Essential game play features are implemented
+
+## Run
+Executable Jar file created for depolyment. Must be using Java 9 Runtime Environment!
+java -jar Pacman.jar
+or double click jar file
